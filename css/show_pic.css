@@ -1,0 +1,11 @@
+.w3-container{padding-top:10px;margin-left:auto;margin-right:auto;width:50%;}
+#unit{
+	display:none; margin-left: 0px;margin-right: 0px;border-top-width: 0px;border-left-width: 0px;width: auto;
+}
+#title{
+	display: block;margin-left: 0px;margin-right: 0px;border-top-width: 0px;border-left-width: 0px;width: auto;
+	margin-bottom: 30px;
+}
+#unit{
+	margin-bottom: 30px;
+}

@@ -1,0 +1,17 @@
+<?php
+if($_SESSION["basic_dist_cd"]=="ADMIN"){
+	header("Location:admin.php");
+}
+if($_SESSION["basic_dist_cd"]=="TEA"){
+	header("Location:tea.php");
+}
+if($_SESSION["basic_dist_cd"]=="OFF"){
+	header("Location:off.php");
+}
+if($_SESSION["basic_dist_cd"]=="UMI"){
+	header("Location:umi.php");
+}
+if($_SESSION["basic_dist_cd"]=="WOR"){
+	header("Location:wor.php");
+}
+?>

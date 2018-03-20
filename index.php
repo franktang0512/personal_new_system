@@ -1,12 +1,25 @@
 <?php
-include("inc/conn.php");
-require_once 'php/smart_libs/Smarty.class.php';
-
-$smarty = new Smarty;
-
-$content='';
-
-$content=<<<HTML
+session_start();
+include('inc/header.php');
+if(isset($_SESSION["id"])){
+// include('inc/index_.php');
+	if($_SESSION["basic_dist_cd"]=="ADMIN"){
+		header("Location:admin.php");
+	}
+	if($_SESSION["basic_dist_cd"]=="TEA"){
+		header("Location:tea.php");
+	}
+	if($_SESSION["basic_dist_cd"]=="OFF"){
+		header("Location:off.php");
+	}
+	if($_SESSION["basic_dist_cd"]=="UMI"){
+		header("Location:umi.php");
+	}
+	if($_SESSION["basic_dist_cd"]=="WOR"){
+		header("Location:wor.php");
+	}
+}
+?>
 <div id="index_outer">
    <div id="formwrap">
       <div class="system_login">
@@ -43,8 +56,7 @@ $content=<<<HTML
       <!--script src="/Scripts/AssetsBS3/ie10-viewport-bug-workaround.js"></script-->
    </div>
 </div>
-HTML;
-//引入smarty樣板使php中沒有html身影，意指html的結果從php運算而得，但檔案彼此分立
-$smarty->assign('content',$content);
-$smarty->display('index.html');
+
+<?php
+include('inc/footer.php');
 ?>

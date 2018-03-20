@@ -1,0 +1,8 @@
+2009.11.05 11:27 B D:\php_test\persys\a\upload\P000\A123456789.jpg <-- persys /home1/www/persys/a/upload/P000 A123456789.jpg
+2009.11.05 11:38 B D:\php_test\persys\a\upload\P000\A123456789.jpg --> 140.123.26.152 /nfs01/www/persys/a/upload/P000 A123456789.jpg
+2009.12.09 10:00 B D:\upload\P000\WS_FTP.LOG <-- persys_152 /nfs01/www/persys/a/upload/P000 WS_FTP.LOG
+2009.12.09 10:02 B D:\upload\P000\A123456789.jpg --> 140.123.26.152 /home/programer/persys01/public_html/persys/a/upload/P000 A123456789.jpg
+2009.12.09 10:05 B D:\php_persys\a\upload\P000\WS_FTP.LOG <-- persys_test_152 /home/programer/persys01/public_html/persys/a/upload/P000 WS_FTP.LOG
+2009.12.09 10:13 B D:\php_persys\a\upload\P000\A123456789.jpg --> 140.123.26.152 /nfs01/www/persys/a/upload/P000 A123456789.jpg
+2009.12.09 10:13 B D:\php_persys\a\upload\P000\WS_FTP.LOG --> 140.123.26.152 /nfs01/www/persys/a/upload/P000 WS_FTP.LOG
+2009.12.09 10:15 B D:\php_persys\a\upload\P000\WS_FTP.LOG --> 140.123.26.152 /nfs01/www/persys/a/upload/P000 WS_FTP.LOG

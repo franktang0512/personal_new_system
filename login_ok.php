@@ -1,34 +1,38 @@
 <?php
-//$op=isset($_REQUEST['op'])? my_filter($_REQUEST['op'],''):'';
-session_start();
-require_once 'inc/conn.php';
-require_once 'php/smart_libs/Smarty.class.php';
-
-$smarty = new Smarty;
-
-if (!isset($_SESSION["id"])) { //還沒登入或已經登出的情況,返回index
-    header("Location:./index.php");
+include('inc/header.php');
+/*把$_SESSION的鍵變成變數*/
+extract($_SESSION);
+if (!isset($id)) { 
+	//未登入返回index
+    header("Location:index.php");
 }
 
-// $page=$_REQUEST["page"];
-// if(empty($_REQUEST["page"])){
-// $page=1;
-// }
-// $pagecnt = 10;
+//$_SESSION內容
+//[call_main]***** [name]
+//           ***** [id] 
+//[dist_cd]  ***** [basic_dist_cd] 
+//[title_cd] ***** [prefix] 
 
-// $sql="EXEC notice_read_sp $page,".$pagecnt;
-// $result=pg_query($sql);
-
-// $content=<<<HTML
-// <div id="main_content">
-// <!--div class="loading">載入中...</div-->
-// <div id="content">
-// </div>
-// </div>
-// HTML;
-// echo $content;
-require_once './menu.php';
-
-$smarty->assign('content',$content);
-$smarty->display('index.html');
+switch(true){ 
+	case $basic_dist_cd=='TEA' ||$basic_dist_cd== 'PRO' ||$basic_dist_cd== 'PRT':
+		header("Location:tea.php");
+		break;
+	case $basic_dist_cd=='OFF':
+		header("Location:off.php");
+		break;
+	case $basic_dist_cd=='UMI':
+		header("Location:umi.php");
+		break;
+	case $basic_dist_cd=='WOR':
+		header("Location:wor.php");
+		break;
+	case $basic_dist_cd=='ADMIN':
+		header("Location:admin.php");
+		break;
+	// 其他人員類別
+	default:	
+		header("Location:index.php");
+		break;
+}
+include('inc/footer.php');
 ?>
