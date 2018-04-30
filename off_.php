@@ -1,7 +1,8 @@
 <?php
 /*查看相片的權限*/
 include('seepic_.php');
-    $slide_menu = '<div class="w3-bar w3-light-grey">
+include('prifix_title.php');
+    $slide_menu .= '<div class="w3-bar w3-light-grey">
                         <div id="make_items_right">
                            <a href="off_hp020_basic.php" class="w3-bar-item w3-button">基本資料修改</a>
                            <a href="off_present.php" class="w3-bar-item w3-button">照片上傳</a>
@@ -36,9 +37,14 @@ include('seepic_.php');
     }
 
     $data = pg_fetch_array($_result);
-    if ($data['unit_parent'] != null) {
-        $slide_menu.= "<a href='off_hp_work_check_manager.php' class='w3-bar-item w3-button'>考核紀錄查詢</a>";
-    }
+	//主管權限限制
+	if($data !=null){
+	    $slide_menu.= "<a href='off_hp_work_check_manager.php' class='w3-bar-item w3-button'>考核紀錄查詢</a>";
+	
+	}
+    // if ($data['unit_parent'] != null) {
+        // $slide_menu.= "<a href='off_hp_work_check_manager.php' class='w3-bar-item w3-button'>考核紀錄查詢</a>";
+    // }
 
     $_SESSION['dist_cd'] = $_SESSION['temp_dist_cd'];
     if ($_SESSION['dist_cd'] == "N") {

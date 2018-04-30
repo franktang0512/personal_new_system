@@ -1,7 +1,8 @@
 <?php
 /*查看相片的權限*/
 include('seepic_.php');
-    $slide_menu = '<div class="w3-bar w3-light-grey">
+include('prifix_title.php');
+    $slide_menu .= '<div class="w3-bar w3-light-grey">
                         <div id="make_items_right">
                            <a href="wor_hp020_basic.php" class="w3-bar-item w3-button">基本資料修改</a>
                            <a href="wor_present.php" class="w3-bar-item w3-button">照片上傳</a>

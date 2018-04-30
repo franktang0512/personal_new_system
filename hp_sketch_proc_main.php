@@ -77,7 +77,7 @@ if($obj=pg_fetch_object($result)){
                     </a>
                    
                     <a id="p_07" class="form_button func_" href="hp_sketch_proc_main.php">
-                        <span>考試或晉升(官等、資位)訓練/檢覆</span>
+                        <span>考試或晉升(官等、資位)訓練/檢覈</span>
                     </a>
                     <a id='p_08' class='form_button func_' href='hp_sketch_proc_main.php'>
                         <span>{$proc_08}</span>

@@ -134,7 +134,7 @@ body{
     <table width="645" border="1">
 	
       <tr> 
-        <td height="55" colspan="2"><strong><font color="#FF33FF">如上傳後未出現照片請重新整理頁面</font></strong><img src="image/pre.gif" width="91" height="20"></td>
+        <td height="55" colspan="2"><strong><font color="#FF33FF">如上傳後未出現照片請重新整理頁面</font></strong><!--img src="image/pre.gif" width="91" height="20"--></td>
       </tr>
       <tr> 
         <td  width="420"> 
@@ -161,7 +161,7 @@ body{
 			4.照片比率約為高5與寬3.5的比率<br/>
             5.若現職資料有問題,請分別電洽:<br/>
               &nbsp;&nbsp;&nbsp;教職員--人事室&nbsp;胡秀治小姐&nbsp;(ext:18116)<br/>
-              &nbsp;&nbsp;&nbsp;技工友--事務組&nbsp;陳忠勇先生&nbsp;(ext:13205)<br/>
+              &nbsp;&nbsp;&nbsp;技工友--事務組&nbsp;劉玫麟&nbsp;(ext:13205)<br/>
 			6.如照片或系統有問題, 請mail
           <a href="mailto:hicstd@ccu.edu.tw">系統管理員</a>
 					</span></p>

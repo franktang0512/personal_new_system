@@ -1,5 +1,7 @@
 <?php
-    $slide_menu = '<div class="w3-bar w3-light-grey">
+	include('prifix_title.php');
+    $slide_menu .='
+	<div class="w3-bar w3-light-grey">
                         <div id="make_items_right">
                            <a href="admin_unit.php?dist_type=OFF" class="w3-bar-item w3-button">教職員管理頁面</a>
                            <a href="admin_unit.php?dist_type=WOR" class="w3-bar-item w3-button">技工友管理介面</a>

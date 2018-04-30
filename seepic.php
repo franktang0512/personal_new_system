@@ -16,7 +16,7 @@ $result = pg_query($sql);
 
 $item_content .='
 <link href="css/show_pic.css" rel="stylesheet" type="text/css" />
-<div class="w3-container">
+<div class="w3-container" style="width: 700px;">
    <div class="w3-bar w3-black">
       <button class="w3-bar-item w3-button tablink w3-red" onclick="openCity(event,\'title\')">依職稱瀏覽</button>
       <button class="w3-bar-item w3-button tablink" onclick="openCity(event,\'unit\')">依單位瀏覽</button>

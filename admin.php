@@ -7,10 +7,7 @@ if (!isset($id) || $_SESSION["basic_dist_cd"]!="ADMIN") {
     header("Location:index.php");
 }
 include('admin_.php');
-    $item_content = <<<HTML
-<div id="main_content"></div>
-
-HTML;
+include('slideshow.php');
     $content = $slide_menu . $item_content;
 	echo $content;
 include('inc/footer.php');

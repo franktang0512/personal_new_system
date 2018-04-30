@@ -25,8 +25,7 @@ if($_POST["ajax"] == "Y" && $_POST["mail"] == "Y"){
 		$mail->Body = "<p>身份證號碼 : ".$_SESSION["proc_edit_id"]."</p><p>姓名 : ".$_SESSION["proc_edit_cname"]."</p><p>以上使用者的履歷資料已完成填寫,請核符</p>";   //內文
 		$mail->IsHTML(true);
 		// $mail->AddAddress("hueyping@ccu.edu.tw"); //測試用
-		// $mail->AddAddress("u03530033@ccu.edu.tw");//測試用
-		$mail->AddAddress("person@ccu.edu.tw");//official one
+		$mail->AddAddress("person@ccu.edu.tw");//正式
 
 		if(!$mail->Send() || $a["des"]<1 || $a["degree"]<1 ){
 			$init_html.="<font color='#ff0000'>";

@@ -5,12 +5,9 @@ if(!isset($_SESSION["id"])){
     echo "無效的操作，請先登入";
     exit();
 }
-//include_once("inc/conn.php");
 include_once("inc/conn.php");
 include_once("hp_sketch_proc_lib.php");
 
-	
-	// echo "<meta http-equiv='Content-Type' content='text/html; charset=UTF8'>";
 	
     $sql="SELECT * FROM h0xt_autobiography_rec WHERE h0xt_autobiography_rec.staff_cd='".$_SESSION['proc_edit_id']."'";
     if($result=pg_query($sql)){
@@ -39,7 +36,7 @@ include_once("hp_sketch_proc_lib.php");
 		
         $init_html=<<<HTML
             <p><b><font size="4px">簡要自述</font></b></p>
-            <p>每一行最多可輸入80個半型的英文、數字(即 40  個中文字) ，最多輸入14行。</p>
+            <p>每一行最多可輸入40個英文、數字、中文字，最多輸入14行。</p>
 			<p> 
 				身分證號碼/統一證號：{$_SESSION["proc_edit_id"]}&nbsp;&nbsp;&nbsp;中文姓名：{$_SESSION["proc_edit_cname"]}&nbsp;                          
             </p>
@@ -47,7 +44,7 @@ include_once("hp_sketch_proc_lib.php");
                 <form class="proc_form" method="POST"> 
      
                    <fieldset> 
-                    <div  style="background-color:#ddf;">
+                    <div id="intro_row" style="background-color:#ddf;">
                           
 						   <p>
                              <label>(01)</label> 

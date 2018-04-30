@@ -66,12 +66,12 @@ $result =pg_query($sql);
 ?>
 <html>
 <body>
-<table width="100%" border="1" align="center"><br>
+<table width="100%" border="1" align="center">
   <tr>
-    <td width="67"><div align="center">單位代碼</div></td>
-    <td width="174"><div align="center">單位名稱</div></td>
-    <td width="67"><div align="center">單位代碼</div></td>
-    <td width="174"><div align="center">單位名稱</div></td>
+    <th width="67"><div align="center">單位代碼</div></th>
+    <th width="174"><div align="center">單位名稱</div></th>
+    <th width="67"><div align="center">單位代碼</div></th>
+    <th width="174"><div align="center">單位名稱</div></th>
   </tr>
  <?php $row =pg_fetch_array($result);
  while(!empty($row)){ ?> 

@@ -7,11 +7,8 @@ if (!isset($id) || $_SESSION["basic_dist_cd"]!="WOR") {
     header("Location:index.php");
 }
 include('wor_.php');
-
-    $item_content = <<<HTML
-<div id="main_content"></div>
-HTML;
-    $content = $slide_menu;
+include('slideshow.php');
+    $content = $slide_menu . $item_content;
 	echo $content;
 
 include('inc/footer.php');

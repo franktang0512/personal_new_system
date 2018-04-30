@@ -108,6 +108,14 @@ while($row =pg_fetch_array($result)){
 			//此處才對tr標籤作閉合後換下一列，不然一列只會出現一筆資料
 		}
 	}
+	//同一列第一筆資料如果是全部的最後一筆，須補這段else使table結構呈現完整，沒有這段會缺一角
+	else{
+		$item_content.='
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>';
+	}
 }
 $item_content.='
 </table>

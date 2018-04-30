@@ -4,7 +4,6 @@ if(!isset($_SESSION["id"])){
     echo "無效的操作，請先登入";
     exit();
 }
-
 include('inc/conn.php');
 include('inc/hp_work_check_function.php');
 ?>

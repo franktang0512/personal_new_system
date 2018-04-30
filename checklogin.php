@@ -71,7 +71,7 @@ header("Content-Type:text/html;charset=utf-8");
 				if(chop($password) == chop($pPass))
 					$checkPass = true;
 				else
-					$checkPass = true;//暫時讓密碼驗證失效
+					$checkPass = false;//暫時讓密碼驗證失效
 			}
        		if($checkPass){
        			// 密碼比對正確,則再查詢人事基本資料檔,看是否有此資料
@@ -123,20 +123,20 @@ header("Content-Type:text/html;charset=utf-8");
 			}
 			else{
 				// 密碼比對錯誤
-				$errmsg = "密碼輸入錯誤,請重新輸入";
+				$errmsg = "密碼輸入錯誤，請重新輸入。";
 			}
 		}
 	}
 
 	// 錯誤訊息顯示
-	echo "您所輸入的帳號為：<font color=red>".$_POST["id"]."</font><br><br>";
-	echo "您所輸入的密碼為：<font color=red>".$_POST["pass"]."</font><br><br>";
-	echo "帳號和密碼確認結果";
+	//echo "您所輸入的帳號為：<font color=red>".$_POST["id"]."</font><br><br>";
+	//echo "您所輸入的密碼為：<font color=red>".$_POST["pass"]."</font><br><br>";
+	echo "帳號和密碼確認結果：";
 	echo $errmsg."<br><br>";
 	echo "<a href=\"index.php\">回上一頁</a>&nbsp;&nbsp;&nbsp;";
 	echo "<a href=\"http://mis.cc.ccu.edu.tw/account/common/query_pwd.php\" target=\"_blank\">密碼查詢</a>";
 	echo "</div>";
-	header("Refresh: 1; url=index.php");
+	//header("Refresh: 1; url=index.php");
 	
 		////////  檢查 ID 是否正確: 只含大寫英文和數字
 	function Verify_ID($pID)
@@ -144,8 +144,7 @@ header("Content-Type:text/html;charset=utf-8");
 		if( preg_match("/^[A-Z0-9]{10}$/", $pID) )  return;
 		else {
 			echo "帳號必須為10碼英數字!";
-			header("Refresh: 1; url=index.php");
-			
+			//header("Refresh: 1; url=index.php");			
 			// die("帳號必須為10碼英數字!");
 
 		}
@@ -155,8 +154,8 @@ header("Content-Type:text/html;charset=utf-8");
 	{
 	  if( preg_match("/^[a-zA-Z0-9!@\$\^_-]{5,15}$/", $pPass) )  return;
 	  else{
-		echo "密碼必須5-15碼英數字及部分的特殊字元!@$^_-";
-		header("Refresh: 1;url=index.php");
+		echo "密碼必須5-15碼英數字及部分的特殊字元!@$^_-<br><br>";
+		//header("Refresh: 1;url=index.php");
 		// die("");
 	  }
 	    

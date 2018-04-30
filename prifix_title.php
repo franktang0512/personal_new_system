@@ -1,0 +1,1 @@
+<?php$slide_menu ='<div style="background-color: #9dc4f5;height: 22px;"><div id="admin_title_prifix">'.trim($_SESSION["name"]).'&nbsp'.trim($_SESSION["prefix"]).'</div></div>';?>

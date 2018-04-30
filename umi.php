@@ -8,9 +8,7 @@ if (!isset($id) || $_SESSION["basic_dist_cd"]!="UMI") {
 }
 include('umi_.php');
 
-    $item_content = <<<HTML
-<div id="main_content"></div>
-HTML;
+include('slideshow.php');
     $content = $slide_menu . $item_content;
 	echo $content;
 

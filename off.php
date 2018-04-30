@@ -7,11 +7,9 @@ if (!isset($id) || $_SESSION["basic_dist_cd"]!="OFF") {
     header("Location:index.php");
 }
 include('off_.php');
-    $item_content = <<<HTML
-<div id="main_content"></div>
-<script src="js/menu_categories/menu_OFF.js"></script>
-HTML;
-    $content = $slide_menu;
+include('slideshow.php');
+
+    $content = $slide_menu.$item_content;
 	echo $content;
 
 include('inc/footer.php');

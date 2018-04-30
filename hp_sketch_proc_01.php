@@ -80,11 +80,11 @@ include_once("hp_sketch_proc_lib.php");
 								<br />(日期格式請以民國年輸入，輸入格式為 yyymmdd，如0991231)
 							</p>
 							<p>
-								<label>↓戶籍住所↓</label>
+								<label>戶籍住所</label>
 								<input type='text' name="root_addr" title="戶籍住所" id="root_addr" value="{$obj->root_addr}" size="80" />
 							</p>
 							<p>
-								<label>↓現居住所↓</label>
+								<label>現居住所</label>
 								<input type='text' name="now_addr" title="現居住所" id="now_addr" value="{$obj->now_addr}" size="80" />
 							</p>
 							<p>

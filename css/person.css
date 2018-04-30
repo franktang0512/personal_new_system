@@ -226,7 +226,7 @@ text-align: center;
 }
 #maincontent{
     margin-top: 10px !important;
-	width:600px;
+	width:800px;
 	margin: 0px auto;
 	margin-bottom: 22px;
 }
@@ -252,6 +252,11 @@ td, th {
     padding: 8px;
 }
 
+th {
+
+    background-color: #35af03;
+    color: white;
+}
 tr:nth-child(even) {
     background-color: #CCEEFF	;
 }
@@ -342,3 +347,49 @@ label:before {
     pointer-events:none;
     display:block;
 }*/
+#admin_title_prifix{
+float: right;
+    justify-content: flex-end;
+    background-color: #9dc4f5;
+}
+#intro_row>p>input{
+	width:650px;
+}
+#resume_panel{
+	width:800px;
+
+}
+
+#main_panel>a,#control_panel>a{
+	margin-left: 40px;
+
+}
+.proc_form>fieldset>div>p:first-child{
+	margin-top:0px;
+	padding-top:10px;
+}
+.proc_form>fieldset>div>p:last-child{
+	padding-bottom:10px;
+}
+#intro_row>p:first-child{
+	padding-top:10px;
+}
+#intro_row>p:last-child{
+	padding-bottom:10px;
+}
+
+
+
+/*****************觀看照片的權限控制的版面css*********************/
+.w3-container{padding-top:10px;margin-left:auto;margin-right:auto;width:50%;}
+#unit{
+	display:none; margin-left: 0px;margin-right: 0px;border-top-width: 0px;border-left-width: 0px;width: auto;
+}
+#title{
+	display: block;margin-left: 0px;margin-right: 0px;border-top-width: 0px;border-left-width: 0px;width: auto;
+	margin-bottom: 30px;
+}
+#unit{
+	margin-bottom: 30px;
+}
+/*********************************************/
