@@ -1,5 +1,5 @@
 <?php
-if(pg_pconnect('host=140.123.30.13 port=5432 dbname=personneldb user=ccumis password=!misdbadmin@ccu')==false){
+if(pg_pconnect('host=140.123.x.x port= dbname= user= password=')==false){
     echo "Connect Profession Database Error!!";
 }
 ?>
